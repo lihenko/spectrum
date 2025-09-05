@@ -1,0 +1,56 @@
+{
+  "name": "gulp-with-tailwindcss",
+  "version": "1.2.0",
+  "description": "TailwindCSS StarterKit with Gulp 4",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "locomotive-scroll": "^5.0.0-beta.21",
+    "mobile-menu": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "9.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-purgecss": "^7.0.2",
+    "gulp-sass": "^6.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^5.0.0",
+    "log-symbols": "^7.0.0",
+    "postcss": "^8.4.49",
+    "sass": "^1.83.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp prod",
+    "prod": "gulp prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manjumjn/gulp-with-tailwindcss.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulp4",
+    "tailwind",
+    "tailwindcss",
+    "sass"
+  ],
+  "author": "Manjunath G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manjumjn/gulp-with-tailwindcss/issues"
+  },
+  "homepage": "https://github.com/manjumjn/gulp-with-tailwindcss#readme"
+}
