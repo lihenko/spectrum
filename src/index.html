@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +9,16 @@
 <body class="open-right">
   <ul class="omni-mobile-menu">
     <li>
-      <a href="#about-us">Über Uns</a>
+      <a href="#">Products</a>
     </li>
     <li>
-      <a href="#services">Leistungen</a>
+      <a href="#">Company</a>
     </li>
     <li >
-      <a href="#benefits">Services</a>
+      <a href="#">Careers</a>
     </li>
     <li >
-      <a href="contact.html">Kontakt</a>
-    </li>
-    <li>
-      <a href="#">Termin vereinbaren</a>
-    </li>
-    <li>
-      <a href="#">Rezept bestellen</a>
+      <a href="#">Contact</a>
     </li>
   </ul><!-- omni-mobile-menu -->
 
@@ -38,29 +32,32 @@
       </div>
   </div>
   <div class="content-wrapper">
-   <header class="py-4">
+   <div class="page-decoration">
+    <img src="./img/page-decoration.svg" alt="decor">
+   </div>
+   <header class="py-4 lg:py-0 relative">
       <div class="container">
         <div class="flex items-center justify-between">
-          <div class="brand w-2/3 lg:w-1/4">
-            <a href="/">
+          <div class="brand w-2/3 lg:w-[319px] xxl:ml-24">
+            <a href="/" class="flex">
               <picture>
                 <img src="./img/logo.svg" alt="Logo">
               </picture>
             </a>
           </div>
           <div class="main-menu hidden lg:block ">
-            <ul class="flex items-center justify-center gap-8">
+            <ul class="flex items-center justify-center gap-4 xl:gap-8 xxl:mr-24">
               <li>
-                <a href="#about-us">Über Uns</a>
+                <a href="#">Products</a>
               </li>
               <li>
-                <a href="#services">Leistungen</a>
+                <a href="#">Company</a>
               </li>
               <li >
-                <a href="#benefits">Services</a>
+                <a href="#">Careers</a>
               </li>
               <li >
-                <a href="contact.html">Kontakt</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -68,13 +65,147 @@
       </div>
     </header>
     <main>
+      <section id="home-hero">
+        <div class="container relative">
+          <div class="video-poster absolute top-0 right-0 bottom-0 left-0 bg-center bg-cover" style="background-image: url(./img/home-hero-video.webp);">
 
-
+          </div>
+          <div class="video-overlay"></div>
+          <div class="home-hero-decoration" data-aos="fade-up" data-aos-delay="100">
+            <img src="./img/home-hero-decoration.svg" alt="decor">
+          </div>
+          <div class="hero-decoration" data-aos="fade-in" data-aos-delay="500" data-aos-duration="2000">
+            <img src="./img/hero-decoration.svg" alt="decor">
+          </div>
+          <div class="pt-16 lg:pt-36 pb-20 lg:pb-64 relative px-3 xl:pl-20 xxl:pl-36">
+            <div class="h1 mb-8 lg:mb-16 uppercase font-light max-w-[886px]">
+              <div data-aos="fade-up" data-aos-delay="300">Spectrum Intelligence.</div> <div class="font-bold" data-aos="fade-up" data-aos-delay="400">Unleashed.</div>
+            </div>
+            <a href="#" class="btn outline-btn" data-aos="fade-up" data-aos-delay="500">Learn More</a></div>
+          </div>
+      </section>
+      <section id="innovation" class="relative py-16 lg:py-36 xxl:pt-40 xxl:pb-48">
+        <div class="container">
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full px-3 xl:pl-20 xxl:pl-36 mb-16">
+              <div class="h2 uppercase">
+                <div data-aos="fade-up" data-aos-delay="300">AI-Powered</div>
+                <div class="font-bold" data-aos="fade-up" data-aos-delay="400">Innovation</div>
+              </div>
+            </div>
+            <div class="w-full px-3 lg:w-1/2 xxl:w-[927px] ml-auto xl:mr-20">
+              <div class="h3 uppercase font-bold mb-16">
+                <div data-aos="fade-up" data-aos-delay="300">for Smarter Spectrum</div>
+                <div data-aos="fade-up" data-aos-delay="400">Management</div>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="500">
+                At SpectrumAI Solutions, we recognize that the radio spectrum is a critical yet finite resource that must be utilized efficiently.  With this fact in mind, we harness the power of artificial intelligence to transform the way wireless communications spectrum is managed and utilized in complex environments. From dynamic spectrum sharing (DSS) to integrated sensing and communications (ISAC), our technology empowers both commercial and defense sectors to achieve unprecedented levels of connectivity, situational awareness, and operational efficiency.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="what-we-do">
+        <div class="container relative bg-blue px-0">
+          <div class="flex flex-wrap">
+            <div class="w-full lg:w-[36%] relative overflow-hidden">
+              <div class="what-we-do-video">
+                <img src="./img/what-we-do-bg.webp" alt="bg" class="h-full w-full">
+              </div>
+              <div class="what-we-do-video-overlay"></div>
+              <div class="h2 px-3 uppercase py-16 lg:hidden">
+                <div data-aos="fade-up" data-aos-delay="300">Intelligent,</div> 
+                <div data-aos="fade-up" data-aos-delay="400">Optimal,</div> 
+                <div data-aos="fade-up" data-aos-delay="500">Continuous.</div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[64%] px-3 py-10 lg:px-10 lg:py-36 xxl:px-32">
+              <div class="h2 uppercase mb-16 hidden lg:block">
+                <div data-aos="fade-up" data-aos-delay="300">Intelligent,</div> 
+                <div data-aos="fade-up" data-aos-delay="400">Optimal,</div> 
+                <div data-aos="fade-up" data-aos-delay="500">Continuous.</div>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="600">
+                Whether in congested urban networks, mission-critical defense scenarios, or emerging 6G applications, we deliver intelligent, data-driven solutions that enable the spectrum is used optimally—today and into the future.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="bg-black text-white py-10 lg:py-16">
-
+    <footer class="relative">
+      <div class="container bg-white pt-24 pb-32">
+        <div class="flex flex-wrap">
+          <div class="w-full mb-11 xl:pl-20 xxl:pl-36">
+            <a href="/" data-aos="fade-up" data-aos-delay="300">
+              <img src="./img/footer-logo.svg" alt="brand">
+            </a>
+          </div>
+          <div class="w-full lg:w-1/2 xxl:w-[700px] xl:pl-20 xxl:pl-32 mb-16 lg:mb-0">
+            <div class="h2 uppercase text-blue mb-16 xxl:mb-32" data-aos="fade-up" data-aos-delay="400">
+              Let’s Connect
+            </div>
+            <div class="footer-contact mb-20">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a href="mailto:info@SpectrumAI.info">
+                    <img src="./img/mail-icon.svg" alt="">
+                    <span>
+                      info@SpectrumAI.info
+                    </span>
+                  </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                  <a href="tel:+1 617-373-3655">
+                    <img src="./img/phone-icon.svg" alt="">
+                    <span>+1 617-373-3655</span>
+                  </a>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="500">
+                  <a href="#">
+                    <img src="./img/address-icon.svg" alt="">
+                    <span>Boston, MA</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-black text-base xl:text-xl" data-aos="fade-up" data-aos-delay="500">
+              For media, partnerships, or investor inquiries, please reach out to <a href="mailto:press@SpectrumAI.info" class="text-blue underline hover:text-black">press@SpectrumAI.info</a>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 xxl:w-[calc(100%-700px)] lg:pl-3 xl:pl-8 xxl:pl-[45px] xxl:pr-28 mb-10 lg:mb-0">
+            <div class="text-base lg:text-lg xxl:text-xxl font-bold text-black mb-20" data-aos="fade-up" data-aos-delay="300">
+              Whether you’re seeking a solution for a complex RF challenge, exploring a strategic partnership, or looking to join our team, we’d love to hear from you.
+            </div>
+            <div class="footer-form-wrap" data-aos="fade-up" data-aos-delay="500">
+              <form action="#">
+                <div class="flex flex-wrap -mx-3">
+                  <div class="w-full px-3 mb-6 lg:w-1/2">
+                    <input type="text" placeholder="Name:">
+                  </div>
+                  <div class="w-full px-3 mb-6 lg:w-1/2">
+                    <input type="tel" placeholder="Phone:">
+                  </div>
+                  <div class="w-full px-3 mb-6">
+                    <input type="email" placeholder="Email:">
+                  </div>
+                  <div class="w-full px-3 mb-16">
+                    <textarea name="" id="" placeholder="Message:"></textarea>
+                  </div>
+                  <div class="w-full px-3 text-center lg:text-right">
+                    <input type="submit" value="Submit">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="w-full text-[12px] text-black xl:pl-20 xxl:pl-32 text-center lg:text-left" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+            © SpectrumAI Solutions, Inc. 2025
+          </div>
+        </div>
+      </div>
     </footer>
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="hidden z-50 fixed p-3 bg-black text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:text-white hover:bg-pink hover:shadow-lg focus:bg-pink focus:shadow-lg focus:outline-none focus:ring-0 active:bg-pink active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="hidden z-50 fixed p-3 bg-black text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:text-white hover:bg-blue hover:shadow-lg focus:bg-blue focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
       <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
     </button>
   </div>

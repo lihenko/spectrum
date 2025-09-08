@@ -23,159 +23,127 @@ $gold : #AD954F;
 
 
 @media screen and (min-width: 640px){
-  .contact-slider-prev{
-    position: absolute;
-    bottom: 55px;
-    right: 110px;
-    cursor: pointer;
-    z-index: 99;
-  }
 
-  .contact-slider-next{
-    position: absolute;
-    bottom: 56px;
-    right: 78px;
-    cursor: pointer;
-    z-index: 99;
-  }
+
+
+
 }
 
 @media screen and (min-width: 768px){
-  .home-slider{
-    & .slide-item{
-      min-height: 700px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      & .slide-data{
-        color: #fff;
-        font-size: 42px;
-        font-weight: 200;
-      }
-    }
-  }
-  .benefits-slider-left-transparence{
-    background: linear-gradient(270.00deg, rgba(247, 235, 233, 0),rgba(247, 235, 233, 1) 100%);
+  .home-hero-decoration{
     position: absolute;
-    left: 0;
-    top: 0; 
-    bottom: 0;
-    width: 166px;
+    top: -22px;
   }
 
-  .benefits-slider-right-transparence{
-    background: linear-gradient(90.00deg, rgba(247, 235, 233, 0),rgba(247, 235, 233, 1) 100%);
-    position: absolute;
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    width: 166px;
-  }
 }
 
 @media screen and (min-width: 992px){
-  .main-menu ul{
-    & li{
-      & a{
-        font-size: 15px;
-        font-weight: 500;
-        @apply text-black hover:text-pink;
-      }
-      &.current-menu-item a{
-        @apply text-pink;
-      }
+  .main-menu{
+    & ul{
+      & li{
+        & a{
+          padding: 70px 25px;
+          font-size: 20px;
+          letter-spacing: 0.05em;
+          color: #fff;
+          position: relative;
+          &::before{
+            content: '';
+            width: 0;
+            height: 8px;
+            background-color: #4265FF;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.3s ease-in-out;
+          }
+          &::after{
+            content: '';
+            width: 0;
+            height: 8px;
+            background-color: #4265FF;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover{
+            &:before{
+              width: 100%;
+            }
+            &::after{
+              width: 100%;
+            }
+          }
+        }
+        &.current-menu-item{
+          & a{
+            &::before{
+              width: 100%;
+            }
+            &::after{
+              width: 100%;
+            }
+          }
+        }
+      }      
     }
   }
-  .contact-slider-prev{
-    bottom: 85px;
+  .home-hero-decoration{
+    position: absolute;
+    left: -138px;
   }
-
-  .contact-slider-next{
-    bottom: 86px;
-  }
-  #fixed-header{
+  .hero-decoration{
     display: block;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: -100%;
-    transition: all 0.8 ease-in-out;
-    background-color: #fff;
-    z-index: 99999;
-  }
-
-  #fixed-header.fixed{
+    position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    & img{
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      transform: translateY(-50%);
+      height: 100%;
+      width: auto;
+    }
   }
 }
 
 @media screen and (min-width: 1200px){
-  .services{
-    & .service:nth-child(even){
-      margin-top: 80px;
-    }
-      
+  .home-hero-decoration{
+    position: absolute;
+    left: -138px;
   }
-  .home-slider{
-    & .slide-item{
-      &.slide-1 .slide-data{
-        max-width: 784px;
-        margin-left: auto;
-        bottom: 80px;
-      }
-      &.slide-2 .slide-data{
-        max-width: 621px;
-        margin-left: auto;
-        bottom: 80px;
-      }
-      &.slide-3 .slide-data{
-        max-width: 659px;
-        margin-right: auto;
-        left: 50px;
-        bottom: 80px;
-      }
-      &.slide-4 .slide-data{
-        max-width: 571px;
-        margin-left: auto;
-        bottom: 80px;
-      }
-      &.slide-5 .slide-data{
-        max-width: 639px;
-        margin-right: auto;
-        left: 50px;
-        bottom: 80px;
-      }
-      &.slide-6 .slide-data{
-        max-width: 639px;
-        margin-right: auto;
-        left: 50px;
-        bottom: 80px;
-      }
-      &.slide-7 .slide-data{
-        max-width: 639px;
-        margin-right: auto;
-        left: 50px;
-        bottom: 80px;
-      }
-      &.slide-8 .slide-data{
-        max-width: 639px;
-        margin-right: auto;
-        left: 50px;
-        bottom: 80px;
-      }
+  .hero-decoration{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    & img{
+      position: absolute;
+      top: 50%;
+      right: 150px;
+      transform: translateY(-50%);
+      height: 100%;
+      width: auto;
     }
   }
-  #buttons{
-    & .sprechstunden{
-
-      padding-top: 18px;
-      padding-bottom: 18px;
-     }
-  } 
 }
 
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1760px){
 
 }
 

@@ -1,7 +1,7 @@
 // Toggle Button
 // This controls the button that opens and closes the menu
 //* Colors
-$omm-button-icon-color: #3F4857 !default;
+$omm-button-icon-color: #fff !default;
 $omm-button-bg-color: '' !default;
 $omm-button-icon-color-hover: "" !default;
 $omm-button-bg-color-hover: "" !default;
@@ -20,8 +20,8 @@ $omm-text-spacing: 10px !default; // margin between text and icon
 $omm-text-transform: "" !default; // text transform value
 //* Other
 $omm-button-radius: 5px !default;
-$omm-button-position: fixed !default; // absolute, fixed
-$omm-button-position-top: 18px !default;
+$omm-button-position: absolute !default; // absolute, fixed
+$omm-button-position-top: 22px !default;
 $omm-button-position-right: 15px !default;
 $omm-button-position-bottom: "" !default;
 $omm-button-position-left: "" !default;
