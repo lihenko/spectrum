@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Products Page</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body class="open-right">
@@ -47,7 +47,7 @@
           </div>
           <div class="main-menu hidden lg:block ">
             <ul class="flex items-center justify-center gap-4 xl:gap-8 xxl:mr-24">
-              <li>
+              <li class="current-menu-item">
                 <a href="#">Products</a>
               </li>
               <li>
@@ -65,71 +65,124 @@
       </div>
     </header>
     <main>
-      <section id="home-hero">
+      <section id="page-title">
         <div class="container relative">
-          <div class="video-poster absolute top-0 right-0 bottom-0 left-0 bg-center bg-cover" style="background-image: url(./img/home-hero-video.webp);">
+          <div class="page-title-bg absolute top-0 right-0 bottom-0 left-0 bg-center bg-cover" style="background-image: url(./img/product-title-bg.webp);">
 
           </div>
-          <div class="video-overlay"></div>
-          <div class="home-hero-decoration" data-aos="fade-up" data-aos-delay="100">
-            <img src="./img/home-hero-decoration.svg" alt="decor">
+          <div class="page-title-overlay"></div>
+          <div class="page-title-decoration" data-aos="fade-in" data-aos-delay="500" data-aos-duration="2000">
+            <img src="./img/page-title-decoration.svg" alt="decor">
           </div>
-          <div class="hero-decoration" data-aos="fade-in" data-aos-delay="500" data-aos-duration="2000">
-            <img src="./img/hero-decoration.svg" alt="decor">
-          </div>
-          <div class="pt-16 lg:pt-36 pb-20 lg:pb-64 relative xl:pl-20 xxl:pl-36">
+          <div class="pt-16 lg:pt-36 pb-20 lg:pb-28 relative xl:pl-20 xxl:pl-36">
             <div class="h1 mb-8 lg:mb-16 uppercase font-light max-w-[886px]">
-              <div data-aos="fade-up" data-aos-delay="300">Spectrum Intelligence.</div> <div class="font-bold" data-aos="fade-up" data-aos-delay="400">Unleashed.</div>
+              <div data-aos="fade-up" data-aos-delay="300">Products</div>
             </div>
-            <a href="#" class="btn outline-btn" data-aos="fade-up" data-aos-delay="500">Learn More</a></div>
+            <div class="max-w-[886px]" data-aos="fade-up" data-aos-delay="400">
+                We develop advanced AI algorithms for real-time spectrum management, dynamic RF resource sharing, and integrated sensing-communications systems. Our edge AI solutions enable resilient autonomy in resource-constrained devices, serving critical applications from secure tactical networks to next-generation industrial IoT.
+              </div>
           </div>
       </section>
-      <section id="innovation" class="relative py-16 lg:py-36 xxl:pt-40 xxl:pb-48">
-        <div class="container">
-          <div class="flex flex-wrap -mx-3">
-            <div class="w-full px-3 xl:pl-20 xxl:pl-36 mb-16">
-              <div class="h2 uppercase">
-                <div data-aos="fade-up" data-aos-delay="300">AI-Powered</div>
-                <div class="font-bold" data-aos="fade-up" data-aos-delay="400">Innovation</div>
-              </div>
+      <section>
+        
+        <div class="container relative py-16 lg:py-32 xl:py-40 xxl:pt-44 xxl:pb-64">
+            <div class="product-number left">
+                <div data-aos="fade-in" data-aos-delay="700" data-aos-duration="3000">01</div>
             </div>
-            <div class="w-full px-3 lg:w-1/2 xxl:w-[927px] ml-auto xl:mr-20">
-              <div class="h4 uppercase font-bold mb-16">
-                <div data-aos="fade-up" data-aos-delay="300">for Smarter Spectrum</div>
-                <div data-aos="fade-up" data-aos-delay="400">Management</div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="500">
-                At SpectrumAI Solutions, we recognize that the radio spectrum is a critical yet finite resource that must be utilized efficiently.  With this fact in mind, we harness the power of artificial intelligence to transform the way wireless communications spectrum is managed and utilized in complex environments. From dynamic spectrum sharing (DSS) to integrated sensing and communications (ISAC), our technology empowers both commercial and defense sectors to achieve unprecedented levels of connectivity, situational awareness, and operational efficiency.
-              </div>
+            <div class="flex flex-wrap -mx-3 items-center">
+                <div class="w-full px-3 xl:pl-20 xxl:pl-36 lg:w-1/2">
+                    
+                    <div class="h2 uppercase mb-16 lg:mb-0" data-aos="fade-up" data-aos-delay="300">
+                        AI for Wireless Spectrum Intelligence
+                    </div>
+                </div>
+                <div class="w-full px-3 lg:w-1/2 xl:pl-[160px] xl:pr-[128px]" data-aos="fade-up" data-aos-delay="500">
+                    We develop advanced AI algorithms that provide real-time spectrum awareness, enabling systems to detect, predict, and adapt to changing RF conditions with minimal human intervention.
+                </div>
             </div>
-          </div>
         </div>
       </section>
-      <section id="what-we-do">
-        <div class="container relative bg-blue px-0">
-          <div class="flex flex-wrap">
-            <div class="w-full lg:w-[36%] relative overflow-hidden">
-              <div class="what-we-do-video">
-                <img src="./img/what-we-do-bg.webp" alt="bg" class="h-full w-full">
-              </div>
-              <div class="what-we-do-video-overlay"></div>
-              <div class="h2 px-6 uppercase py-16 lg:hidden">
-                <div data-aos="fade-up" data-aos-delay="300">Intelligent,</div> 
-                <div data-aos="fade-up" data-aos-delay="400">Optimal,</div> 
-                <div data-aos="fade-up" data-aos-delay="500">Continuous.</div>
-              </div>
+      <section>
+        
+        <div class="container relative py-16 lg:py-32 xl:py-40 xxl:pt-44 xxl:pb-64 bg-violet">
+            <div class="absolute top-0 bottom-0 left-0 right-0 lg:right-1/2 bg-cover bg-center" style="background-image: url(./img/Sharing-Management-bg.webp);"></div>
+            <div class="bg-violet opacity-90 absolute top-0 bottom-0 left-0 right-0 lg:right-1/2"></div>
+            <div class="product-number right">
+                <div data-aos="fade-in" data-aos-delay="700" data-aos-duration="3000">02</div>
             </div>
-            <div class="w-full lg:w-[64%] px-6 py-10 lg:px-10 lg:py-36 xxl:px-32">
-              <div class="h2 uppercase mb-16 hidden lg:block">
-                <div data-aos="fade-up" data-aos-delay="300">Intelligent,</div> 
-                <div data-aos="fade-up" data-aos-delay="400">Optimal,</div> 
-                <div data-aos="fade-up" data-aos-delay="500">Continuous.</div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="600">
-                Whether in congested urban networks, mission-critical defense scenarios, or emerging 6G applications, we deliver intelligent, data-driven solutions that enable the spectrum is used optimally—today and into the future.
-              </div>
+            <div class="flex flex-wrap -mx-3 items-center">
+                <div class="w-full px-3 xl:pl-20 xxl:pl-36 lg:w-1/2 lg:order-2">
+                    
+                    <div class="h2 uppercase mb-16 lg:mb-0" data-aos="fade-up" data-aos-delay="300">
+                        Dynamic Spectrum Sharing & Management
+                    </div>
+                </div>
+                <div class="w-full px-3 lg:w-1/2 xl:pl-[160px] xl:pr-[128px] lg:order-1 relative" data-aos="fade-up" data-aos-delay="500">
+                    
+                    <div class="relative">Our intelligent spectrum management solutions allow for more efficient use of RF resources, reducing interference and ensuring reliable communication across diverse applications.</div>
+                </div>
             </div>
-          </div>
+        </div>
+      </section>
+      <section>
+        
+        <div class="container relative py-16 lg:py-32 xl:py-40 xxl:pt-44 xxl:pb-64">
+            <div class="absolute top-0 bottom-0 left-0 right-0 lg:left-1/2 bg-cover bg-center" style="background-image: url(./img/isac-bg.webp);"></div>
+            <div class="product-number left">
+                <div data-aos="fade-in" data-aos-delay="700" data-aos-duration="3000">03</div>
+            </div>
+            <div class="flex flex-wrap -mx-3 items-center">
+                <div class="w-full px-3 xl:pl-20 xxl:pl-36 lg:w-1/2">
+                    
+                    <div class="h2 uppercase mb-16 lg:mb-0" data-aos="fade-up" data-aos-delay="300">
+                        Integrated Sensing & Communications (ISAC)
+                    </div>
+                </div>
+                <div class="w-full px-3 lg:w-1/2 xl:pl-[160px] xl:pr-[128px]" data-aos="fade-up" data-aos-delay="500">
+                    By fusing sensing and communication capabilities into a single system, we create unified solutions that enhance detection, tracking, and information exchange in both commercial and defense domains.
+                </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        
+        <div class="container relative py-16 lg:py-32 xl:py-40 xxl:pt-44 xxl:pb-64 bg-blue">
+            <div class="absolute top-0 bottom-0 left-0 right-0 lg:right-1/2 bg-cover bg-center" style="background-image: url(./img/edge-ai-bg.webp);"></div>
+            <div class="bg-blue opacity-90 absolute top-0 bottom-0 left-0 right-0 lg:right-1/2"></div>
+            <div class="product-number right">
+                <div data-aos="fade-in" data-aos-delay="700" data-aos-duration="3000">04</div>
+            </div>
+            <div class="flex flex-wrap -mx-3 items-center">
+                <div class="w-full px-3 xl:pl-20 xxl:pl-36 lg:w-1/2 lg:order-2">
+                    
+                    <div class="h2 uppercase mb-16 lg:mb-0" data-aos="fade-up" data-aos-delay="300">
+                        Edge AI for Resilient Autonomy
+                    </div>
+                </div>
+                <div class="w-full px-3 lg:w-1/2 xl:pl-[160px] xl:pr-[128px] lg:order-1 relative" data-aos="fade-up" data-aos-delay="500">
+                    
+                    <div class="relative">Effective and efficient AI that works anytime, anywhere is quintessential to autonomous systems. We create resilient AI solutions that support edge intelligence in resource-constrained devices.</div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        
+        <div class="container relative py-16 lg:py-32 xl:py-40 xxl:pt-44 xxl:pb-64">
+            <div class="product-number left">
+                <div data-aos="fade-in" data-aos-delay="700" data-aos-duration="3000">05</div>
+            </div>
+            <div class="flex flex-wrap -mx-3 items-center">
+                <div class="w-full px-3 xl:pl-20 xxl:pl-36 lg:w-1/2">
+                    
+                    <div class="h2 uppercase mb-16 lg:mb-0" data-aos="fade-up" data-aos-delay="300">
+                        Defense & Commercial Applications
+                    </div>
+                </div>
+                <div class="w-full px-3 lg:w-1/2 xl:pl-[160px] xl:pr-[128px]" data-aos="fade-up" data-aos-delay="500">
+                    From secure tactical networks to next-generation industrial IoT, our technology addresses a wide range of challenges across industries.
+                </div>
+            </div>
         </div>
       </section>
     </main>

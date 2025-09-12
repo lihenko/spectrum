@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>About Page</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body class="open-right">
@@ -47,10 +47,10 @@
           </div>
           <div class="main-menu hidden lg:block ">
             <ul class="flex items-center justify-center gap-4 xl:gap-8 xxl:mr-24">
-              <li>
+              <li >
                 <a href="#">Products</a>
               </li>
-              <li>
+              <li class="current-menu-item">
                 <a href="#">Company</a>
               </li>
               <li >
@@ -65,71 +65,95 @@
       </div>
     </header>
     <main>
-      <section id="home-hero">
+      <section id="page-title">
         <div class="container relative">
-          <div class="video-poster absolute top-0 right-0 bottom-0 left-0 bg-center bg-cover" style="background-image: url(./img/home-hero-video.webp);">
+          <div class="page-title-bg absolute top-0 right-0 bottom-0 left-0 bg-center bg-cover" style="background-image: url(./img/about-title-bg.webp);">
 
           </div>
-          <div class="video-overlay"></div>
-          <div class="home-hero-decoration" data-aos="fade-up" data-aos-delay="100">
-            <img src="./img/home-hero-decoration.svg" alt="decor">
+          <div class="page-title-overlay"></div>
+          <div class="page-title-decoration" data-aos="fade-in" data-aos-delay="500" data-aos-duration="2000">
+            <img src="./img/page-title-decoration.svg" alt="decor">
           </div>
-          <div class="hero-decoration" data-aos="fade-in" data-aos-delay="500" data-aos-duration="2000">
-            <img src="./img/hero-decoration.svg" alt="decor">
-          </div>
-          <div class="pt-16 lg:pt-36 pb-20 lg:pb-64 relative xl:pl-20 xxl:pl-36">
+          <div class="pt-16 lg:pt-36 pb-20 lg:pb-28 relative xl:pl-20 xxl:pl-36">
             <div class="h1 mb-8 lg:mb-16 uppercase font-light max-w-[886px]">
-              <div data-aos="fade-up" data-aos-delay="300">Spectrum Intelligence.</div> <div class="font-bold" data-aos="fade-up" data-aos-delay="400">Unleashed.</div>
+              <div data-aos="fade-up" data-aos-delay="300">About Us</div>
             </div>
-            <a href="#" class="btn outline-btn" data-aos="fade-up" data-aos-delay="500">Learn More</a></div>
+            <div class="max-w-[886px]" data-aos="fade-up" data-aos-delay="400">
+                Founded by Dr. Jonathan Ashdown (CEO) and Prof. Francesco Restuccia (CTO), SpectrumAI Solutions was built on the belief that artificial intelligence will redefine the wireless landscape. With decades of combined expertise in RF engineering, AI/ML, and emerging communication standards, our leadership team is committed to advancing the future of wireless technology.
+              </div>
           </div>
       </section>
-      <section id="innovation" class="relative py-16 lg:py-36 xxl:pt-40 xxl:pb-48">
+      <section id="members" class="py-16 lg:py-24">
         <div class="container">
-          <div class="flex flex-wrap -mx-3">
-            <div class="w-full px-3 xl:pl-20 xxl:pl-36 mb-16">
-              <div class="h2 uppercase">
-                <div data-aos="fade-up" data-aos-delay="300">AI-Powered</div>
-                <div class="font-bold" data-aos="fade-up" data-aos-delay="400">Innovation</div>
-              </div>
+            <div class="flex flex-wrap -mx-3 member-bio-column mb-40">
+                <div class="w-full px-3 lg:w-1/2 mb-6 lg:mb-0">
+                    <img src="./img/Dr. Jonathan Ashdown.webp" alt="" class="mx-auto" data-aos="fade-right" data-aos-delay="300">
+                </div>
+                <div class="w-full px-3 lg:w-1/2 relative">
+                    <div class="h3 uppercase font-bold mb-3" data-aos="fade-up" data-aos-delay="300">
+                        Dr. Jonathan Ashdown
+                    </div>
+                    <div class="h5 font-light mb-8" data-aos="fade-up" data-aos-delay="400">CEO</div>
+                    <div class="member-bio mb-8" data-aos="fade-up" data-aos-delay="500">
+                        Jonathan Ashdown was born in Niskayuna, NY, USA. He received the B.S., M.S., and Ph.D. degrees from Rensselaer Polytechnic Institute, Troy, NY, USA, in 2006, 2008, and 2012, respectively, all in electrical engineering. His doctoral dissertation was on a high-rate ultrasonic through-wall communication system using MIMO-OFDM in conjunction with interference mitigation techniques. In 2012, he was a recipient of the Best Unclassified Paper Award at the IEEE Military Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, recusandae saepe. Sunt voluptate nulla ut ipsum vitae quis neque inventore dolor accusamus doloribus expedita hic assumenda in delectus explicabo quae esse saepe reprehenderit, tenetur tempore adipisci odio eos optio? Amet corporis reiciendis esse debitis officia quos eaque tenetur. 
+                    </div>
+                    <div>
+                        <div class="bio-more-button cursor-pointer flex items-center gap-4" data-aos="fade-up" data-aos-delay="600">
+                            SHOW MORE
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="w-full px-3 lg:w-1/2 xxl:w-[927px] ml-auto xl:mr-20">
-              <div class="h4 uppercase font-bold mb-16">
-                <div data-aos="fade-up" data-aos-delay="300">for Smarter Spectrum</div>
-                <div data-aos="fade-up" data-aos-delay="400">Management</div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="500">
-                At SpectrumAI Solutions, we recognize that the radio spectrum is a critical yet finite resource that must be utilized efficiently.  With this fact in mind, we harness the power of artificial intelligence to transform the way wireless communications spectrum is managed and utilized in complex environments. From dynamic spectrum sharing (DSS) to integrated sensing and communications (ISAC), our technology empowers both commercial and defense sectors to achieve unprecedented levels of connectivity, situational awareness, and operational efficiency.
-              </div>
+            <div class="flex flex-wrap -mx-3 member-bio-column mb-40">
+                <div class="w-full px-3 lg:w-1/2 mb-6 lg:mb-0">
+                    <img src="./img/Prof. Francesco Restuccia.webp" alt="" class="mx-auto" data-aos="fade-right" data-aos-delay="300">
+                </div>
+                <div class="w-full px-3 lg:w-1/2 relative">
+                    <div class="h3 uppercase font-bold mb-3" data-aos="fade-up" data-aos-delay="300">
+                        Prof. Francesco Restuccia 
+                    </div>
+                    <div class="h5 font-light mb-8" data-aos="fade-up" data-aos-delay="400">CTO</div>
+                    <div class="member-bio mb-8" data-aos="fade-up" data-aos-delay="500">
+                        Francesco Restuccia is an Assistant Professor at Northeastern University. Restuccia has made seminal research contributions to the application of machine learning in mobile computing and networking. Overall, PI Restuccia is the co-author of 100+ papers in top-tier highly selective venues in computer networks and AI. Restuccia has extensive experience on DoD and NSF projects, including DARPA, IARPA, ONR, AFOSR and AFRL. Restuccia is significantly active in Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, recusandae saepe. Sunt voluptate nulla ut ipsum vitae quis neque inventore dolor accusamus doloribus expedita hic assumenda in delectus explicabo quae esse saepe reprehenderit, tenetur tempore adipisci odio eos optio? Amet corporis reiciendis esse debitis officia quos eaque tenetur. 
+                    </div>
+                    <div>
+                        <div class="bio-more-button cursor-pointer flex items-center gap-4" data-aos="fade-up" data-aos-delay="600">
+                            SHOW MORE
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
       </section>
-      <section id="what-we-do">
-        <div class="container relative bg-blue px-0">
-          <div class="flex flex-wrap">
-            <div class="w-full lg:w-[36%] relative overflow-hidden">
-              <div class="what-we-do-video">
-                <img src="./img/what-we-do-bg.webp" alt="bg" class="h-full w-full">
-              </div>
-              <div class="what-we-do-video-overlay"></div>
-              <div class="h2 px-6 uppercase py-16 lg:hidden">
-                <div data-aos="fade-up" data-aos-delay="300">Intelligent,</div> 
-                <div data-aos="fade-up" data-aos-delay="400">Optimal,</div> 
-                <div data-aos="fade-up" data-aos-delay="500">Continuous.</div>
-              </div>
+      <section id="our-mission">
+        
+        <div class="container relative py-16 lg:py-32 xl:py-40 xxl:py-64 bg-blue">
+            <div class="absolute top-0 bottom-0 left-0 right-0 lg:left-1/2 bg-cover bg-center" style="background-image: url(./img/our-mission-bg.webp);"></div>
+            <div class="bg-blue opacity-80 absolute top-0 bottom-0 left-0 right-0 lg:left-1/2"></div>
+            <div class="flex flex-wrap -mx-3 items-center">
+                <div class="w-full px-3 xl:pl-20 xxl:pl-36 lg:w-1/2">
+                    
+                    <div class="h2 uppercase mb-16 lg:mb-0" data-aos="fade-up" data-aos-delay="300">
+                        Our Mission
+                    </div>
+                </div>
+                <div class="w-full px-3 lg:w-1/2 xl:pl-[160px] xl:pr-[128px] relative" data-aos="fade-up" data-aos-delay="500">
+                    
+                    <div class="relative">To empower the future of wireless through AI-driven innovation—optimizing spectrum utilization, integrating sensing and communication, and advancing connectivity for both commercial and defense applications</div>
+                </div>
             </div>
-            <div class="w-full lg:w-[64%] px-6 py-10 lg:px-10 lg:py-36 xxl:px-32">
-              <div class="h2 uppercase mb-16 hidden lg:block">
-                <div data-aos="fade-up" data-aos-delay="300">Intelligent,</div> 
-                <div data-aos="fade-up" data-aos-delay="400">Optimal,</div> 
-                <div data-aos="fade-up" data-aos-delay="500">Continuous.</div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="600">
-                Whether in congested urban networks, mission-critical defense scenarios, or emerging 6G applications, we deliver intelligent, data-driven solutions that enable the spectrum is used optimally—today and into the future.
-              </div>
+        </div>
+      </section>
+      <section id="our-vision" class="pt-16 lg:pt-24 xl:pt-32" style="background-image: url(./img/our-vision-bg.webp);">
+        <div class="container">
+            <div class="text-center">
+                <div class="h2 mb-8" data-aos="fade-up" data-aos-delay="300">
+                    Our Vision
+                </div>
+                <div class="max-w-[824px] mx-auto" data-aos="fade-up" data-aos-delay="400">
+                    A connected world where every hertz of spectrum is intelligently managed to maximize efficiency, security, and capability.
+                </div>
             </div>
-          </div>
         </div>
       </section>
     </main>

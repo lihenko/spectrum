@@ -24,7 +24,10 @@ $gold : #AD954F;
 
 @media screen and (min-width: 640px){
 
-
+  #our-vision{
+    padding-bottom: 590px;
+    margin-bottom: -430px;
+  }
 
 
 }
@@ -116,6 +119,35 @@ $gold : #AD954F;
       width: auto;
     }
   }
+
+  .page-title-decoration{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    & img{
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      transform: translateY(-50%);
+      height: 100%;
+      width: auto;
+    }
+  }
+  .product-number{
+    font-size: 250px;
+    &.left{
+      left: 50%;
+      transform: translateX(-100%);
+    }
+  }
+  #our-vision{
+    padding-bottom: 680px;
+    margin-bottom: -470px;
+  }
 }
 
 @media screen and (min-width: 1200px){
@@ -140,11 +172,41 @@ $gold : #AD954F;
       width: auto;
     }
   }
+  .page-title-decoration{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    & img{
+      position: absolute;
+      top: 50%;
+      right: 150px;
+      transform: translateY(-50%);
+      height: 100%;
+      width: auto;
+    }
+  }
+  #our-vision{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 1100px;
+    margin-bottom: -670px;
+  }
 }
 
 
 @media screen and (min-width: 1760px){
-
+  .product-number{
+    font-size: 430px;
+  }
+  #our-vision{
+    padding-bottom: 50vw;
+    margin-bottom: -35vw;
+  }
 }
 
 @media screen and (min-width: 1920px){

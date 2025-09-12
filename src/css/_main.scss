@@ -15,6 +15,7 @@ $bgblack : #1E1E1E;
 $violet : #6C42DC;
 $orange : #FF7A00;
 
+
 body, html{
   position: relative;
 }
@@ -25,28 +26,28 @@ body, html{
 
 @layer components {
     body{
-        @apply text-white text-xs sm:text-base leading-normal lg:text-lg  xxl:text-xxl font-body;
+        @apply text-white text-sm sm:text-base leading-normal lg:text-lg  xxl:text-xxl font-body;
     }
     h1, .h1{
-        @apply text-[42px] lg:text-[56px] xl:text-[84px] xxl:text-[106px] leading-[1.1] font-title;
+        @apply text-[38px] lg:text-[56px] xl:text-[84px] xxl:text-[106px] leading-[1.1] font-title;
     }
     h2, .h2{
       @apply text-[32px] lg:text-[44px] xl:text-[56px] xxl:text-[74px] leading-[1.1] font-title;
     }
     h3, .h3{
-      @apply text-[22px] lg:text-[24px] xl:text-[26px] xxl:text-[32px] leading-[1.1] font-title; 
+      @apply text-[26px] lg:text-[32px] xl:text-[36px] xxl:text-[40px] leading-[1.1] font-title; 
     }
     h4, .h4{
-        @apply text-[18px] lg:text-[22px] xl:text-[26px] leading-[1.1];
+      @apply text-[22px] lg:text-[24px] xl:text-[26px] xxl:text-[32px] leading-[1.1] font-title; 
     }
     h5, .h5{
-        @apply text-[16px] lg:text-[18px] xl:text-[24px] leading-[1.1];
+      @apply text-[20px] lg:text-[22px] xl:text-[24px] xxl:text-[30px] leading-[1.1] font-title; 
     }
     p{
         @apply mb-3 sm:mb-6;
     }
     .container{
-        @apply mx-auto px-3 lg:px-4;
+        @apply mx-auto px-6 lg:px-4;
     }
 
     input[type=text], input[type=email], input[type=tel], input[type=url], input[type=number], input[type=password]{
@@ -155,6 +156,10 @@ body, html{
   display: none;
 }
 
+.page-title-decoration{
+  display: none;
+}
+
 #innovation{
   background-image: url(../img/innovation-bg.webp);
   background-position: center;
@@ -182,5 +187,75 @@ body, html{
   @apply text-base xl:text-[24px];
   & a{
     @apply text-black flex items-center mb-9 gap-10 hover:text-blue;
+  }
+}
+
+.page-title-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(24, 25, 75, 0.8);
+}
+
+
+.product-number{
+  position: absolute;
+  display: block;
+  bottom: 0;
+  color: rgba($color: #FFF, $alpha: 0.1);
+  bottom: 0;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 800;
+  &.left{
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  &.right{
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+
+.bio-more-button{
+  color: #4265FF;
+  font-size: 20px;
+  &::after{
+    content: url(../img/arrow-down.svg);
+    width: 28px;
+    height: 28px;
+  }
+  &.active::after{
+    transform: rotate(180deg);
+  }
+}
+
+#our-vision{
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 590px;
+  margin-bottom: -430px;
+}
+
+.marked-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  & li{
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 80px;
+    &::before{
+      content: url(../img/white-marker-for-list.svg);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:last-child{
+        margin-bottom: 0;
+      }
   }
 }

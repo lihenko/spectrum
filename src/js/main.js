@@ -109,3 +109,44 @@ AOS.init({
   once: true,
   
 });
+
+
+jQuery(document).ready(function () {
+    jQuery('.member-bio').each(function () {
+        var $bio = jQuery(this);
+        var fullText = $bio.text().trim();
+        var words = fullText.split(/\s+/);
+        if (words.length > 68) {
+            var shortText = words.slice(0, 68).join(' ');
+            var moreText = words.slice(68).join(' ');
+            $bio.data('full', fullText);
+            $bio.data('short', shortText);
+            $bio.html(shortText + '<span class="member-ellipsis">... </span><span class="member-more-text" style="display:none;"> ' + moreText + '</span>');
+            $bio.siblings().find('.bio-more-button').show().data('expanded', false);
+        }
+    });
+
+    jQuery('.bio-more-button').on('click', function () {
+        var $btn = jQuery(this);
+        var $bio = $btn.closest('.member-bio-column').find('.member-bio');
+        if ($bio.length === 0) {
+            $bio = $btn.parents('.flex').find('.member-bio');
+        }
+        var $ellipsis = $bio.find('.member-ellipsis');
+        var $more = $bio.find('.member-more-text');
+        var expanded = $btn.data('expanded');
+        if (!expanded) {
+            $ellipsis.hide();
+            $more.fadeIn(300).css('display', 'inline');
+            $btn.text('SHOW LESS');
+            $btn.addClass('active');
+        } else {
+            $more.fadeOut(300, function() {
+                $ellipsis.show();
+            });
+            $btn.text('SHOW MORE');
+            $btn.removeClass('active');
+        }
+        $btn.data('expanded', !expanded);
+    });
+});
